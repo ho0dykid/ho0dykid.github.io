@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ho0dykid - Home</title>
+    <link rel="icon" type="image/x-icon" href="src/img/icon.png">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <div class="header">
+    <img src="src/img/banner.jpg" alt="ho0dykid webpage banner" ; class="center"/>
+    </div>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a style="font-family:'Lato', sans-serif" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="#about">about</a>
+            <a href="#music">my music</a>
+            <a href="#shows">tours'n concerts</a>
+        </div>
+
+    </div>
+    <div class="open">
+        <a style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</a>
+    </div>
+    <div class="heading">
+        <a href="index.html"><p>ho0dykid</p></a>
+    </div>
+    <div class="main">
+        <h1 id="about">just another artist with a ukulele...</h1>
+        <p>
+            Hi! My name is ho0dykid (pronounced as "hoodie kid"), and 
+            <br>I am, currently, a 15 year old artist. I started my journey
+            <br>in October of 2023, right after my 14th birthday. I usually
+            <br>listen to BoyWithUke, which is why my songs sound a lot like his.
+            <br>I'm trying my hardest to keep my music original, but it's difficult
+            <br>sometimes. But what is different between me and him? He has actual 
+            <br>talent, I have to work hard to make something that isn't shit.
+        </p>
+        <br>
+        <h1 id="music">my music</h1>
+        <img src="src/img/icon.png" alt="Music" width=300px>
+        <h3>Coming soon...</h3>
+        <p>Stream on:</p>
+        <a href="https://www.youtube.com/@ho0dykid" class="fa fa-youtube-play"></a>
+        <a href="https://open.spotify.com/intl-de/artist/1S3A8FYryTTAGOOerzRx0U?si=5Kmx8TXsTAaGwldYnmKa-Q" class="fa fa-spotify"></a>
+        <a href="https://soundcloud.com/user-661191951?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" class="fa fa-soundcloud"></a>
+        <a href="https://music.apple.com/us/artist/ho0dykid/1714089143" class="fa fa-apple"></a>
+        <br>
+        <h1 id="shows">tours / concerts</h1>
+        <p>
+            As of right now, there aren't any shows.
+            <br> I'll do some when I get famous.
+        </p>
+        <br>
+        <br>
+        <p style="font-size: 14px; color: #6D5D6E">
+            © ho0dy Records 2024 - 2025
+            <br>ho0dykid, o0 and smol ho0dykid are Trademarks of ho0dy Records
+            <br>All images used were taken by ho0dykid
+            <br>Illustrations by: Jadzia Amira Staple
+            <br>Fonts used: Whitney, Aksi Mosi, MS-Scratch
+        </p>
+        <br>
+        <br>
+    </div>
+    <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        }
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+        // Get the input field
+        var input = document.getElementById("name");
+        var  email = document.getElementById("email");
+    
+        // Get the warning text
+        var text = document.getElementById("warning");
+    
+        // When the user presses any key on the keyboard, run the function
+        input.addEventListener("keyup", function(event) {
+    
+            // If "caps lock" is pressed, display the warning text
+            if (event.getModifierState("CapsLock")) {
+                text.style.display = "block";
+            } 
+            else {
+                text.style.display = "none"
+            }
+        });
+        email.addEventListener("keyup", function(event) {
+    
+            // If "caps lock" is pressed, display the warning text
+            if (event.getModifierState("CapsLock")) {
+                text.style.display = "block";
+            } 
+            else {
+                text.style.display = "none"
+            }
+        });
+    </script>
+</body>
+</html>
