@@ -22,7 +22,7 @@
         <div class="overlay-content">
             <a href="#about">about</a>
             <a href="#music">my music</a>
-            <a href="#shows">tours'n concerts</a>
+            <a href="#shows">tours 'n' concerts</a>
         </div>
 
     </div>
@@ -81,34 +81,6 @@
         function closeNav() {
         document.getElementById("myNav").style.width = "0%";
         }
-        // Get the input field
-        var input = document.getElementById("name");
-        var  email = document.getElementById("email");
-    
-        // Get the warning text
-        var text = document.getElementById("warning");
-    
-        // When the user presses any key on the keyboard, run the function
-        input.addEventListener("keyup", function(event) {
-    
-            // If "caps lock" is pressed, display the warning text
-            if (event.getModifierState("CapsLock")) {
-                text.style.display = "block";
-            } 
-            else {
-                text.style.display = "none"
-            }
-        });
-        email.addEventListener("keyup", function(event) {
-    
-            // If "caps lock" is pressed, display the warning text
-            if (event.getModifierState("CapsLock")) {
-                text.style.display = "block";
-            } 
-            else {
-                text.style.display = "none"
-            }
-        });
     </script>
 </body>
 </html>
